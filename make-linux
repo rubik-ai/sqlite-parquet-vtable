@@ -19,13 +19,13 @@ setup_directories() {
 
 install_prerequisites() {
   # Install prereqs based on https://github.com/apache/parquet-cpp#linux
-  sudo apt-get install libboost-dev g++ libboost-filesystem-dev \
+  sudo apt-get install -y libboost-dev g++ libboost-filesystem-dev \
     libboost-program-options-dev libboost-regex-dev \
     libboost-system-dev libboost-test-dev \
     libssl-dev libtool bison flex pkg-config
 
   # Install prereqs based on https://github.com/apache/arrow/tree/master/cpp
-  sudo apt-get install cmake \
+  sudo apt-get install -y cmake \
     libboost-dev \
     libboost-filesystem-dev \
     libboost-system-dev
